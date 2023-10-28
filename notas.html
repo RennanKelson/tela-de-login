@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt" data-bs-theme="dark" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascrip" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de notas</title>
+    <style>
+
+    </style>
+</head>
+
+<body class="d-flex align-items-center py-4 bg-body-tertiary h-100">
+    <form class="w-100 m-auto form-container">
+        <legend>Informações do Aluno</legend>
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Digite seu nome">
+        </div>
+        <div class="mb-3">
+            <label for="rgm" class="form-label">RGM</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Digite seu RGM">
+        </div>
+        <div class="mb-3">
+            <label for="turma" class="form-label">Turma</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Digite sua turma">
+        </div>
+        <div class="container">
+            <legend>Notas: </legend>
+            <div class="row">
+                <div class="col input-group flex-nowrap mb-3">
+                    <span class="input-group-text" id="addon-wrapping">Nota 1</span>
+                    <input type="number" class="form-control" placeholder="Digite sua primeira nota"
+                        aria-label="Digite sua primeira nota" aria-describedby="addon-wrapping" min="0" max="10"
+                        step="0.1" required>
+                </div>
+                <div class="col input-group flex-nowrap mb-3">
+                    <span class="input-group-text" id="addon-wrapping">Nota 2</span>
+                    <input type="number" class="form-control" placeholder="Digite sua primeira nota"
+                        aria-label="Digite sua primeira nota" aria-describedby="addon-wrapping" min="0" max="10"
+                        step="0.1" required>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-40 py-2">Enviar</button>
+        <a type="submit" href="index.html" class="btn btn-primary w-40 py-2">Cancelar</a>
+    </form>
+</body>
+
+</html>
